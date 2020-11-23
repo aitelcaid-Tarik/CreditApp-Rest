@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix')
+        format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+        url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+        url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular')
+        format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OCRAStd';
+    src: url('../fonts/OCRAStd.eot');
+    src: url('../fonts/OCRAStd.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OCRAStd.woff2') format('woff2'),
+        url('../fonts/OCRAStd.woff') format('woff'),
+        url('../fonts/OCRAStd.ttf') format('truetype'),
+        url('../fonts/OCRAStd.svg#OCRAStd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 2px 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+h2 {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 37px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 33px;
+}
+
+h5 {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+h6 {
+    font-size: 13px;
+    line-height: 28px;
+}
+
+p {
+    margin: 2px 0px;
+    padding: 0px;
+    margin-bottom: 5px;
+    line-height: 28px;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+/* General CSS */
+.my-cc {
+   position:absolute;
+    left:45%;
+    top:22%;
+    margin:-100px 0 0 -150px;
+    margin-bottom: 150px;
+}
+
+
+
+/* Card */
+.my-cc .item {
+    width: 375px;
+    height: 210px; margin : 20px auto;
+    border: 1px solid #ddd;
+    padding: 0px 20px;
+    background: #f8f8f8;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    margin: 30px auto;
+   
+}
+
+.my-cc .item-black {
+    background: #000;
+    color: #fff;
+}
+
+.my-cc .item-image {
+    background-position: center center;
+    background-size: cover;
+}
+/* Transparent Image */
+.my-cc .item img {
+    position: absolute;
+    top: -126px;
+    left: -56px;
+    transform: rotate(49deg);
+}
+/* Heading */
+.my-cc .item .item-heading {
+    margin: 10px 0px;
+}
+
+.my-cc .item .item-heading h3 {
+    float: left;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+/* Bank Name */
+.my-cc .item .item-heading h4 {
+    float: right;
+    font-size: 16px;
+    line-height: 28px;
+    color: #aaa;
+    font-weight: 400;
+}
+/* Account Number */
+.my-cc .item .item-account {
+    margin: 10px 0px;
+}
+
+.my-cc .item .item-account span {
+    font-size: 15px;
+    line-height: 28px;
+    margin: 0px 5px;
+    letter-spacing: 3px;
+    font-family: 'OCRAStd';
+}
+
+.my-cc .item .item-account span.ui-anum {
+    padding: 0px 4px;
+    background: #fff;
+}
+
+.my-cc .item.item-black .item-account span.ui-anum {
+    padding: 0px 4px;
+    background: rgba(255, 255, 255, 0.45);
+}
+/* Item */
+.my-cc .item .item-validity .item-valid {
+    margin: 5px 0px;
+}
+/* Title */
+.my-cc .item .item-validity .item-valid h5 {
+    width: 36px;
+    font-size: 12px;
+    line-height: 18px;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #aaa;
+}
+/* Value */
+.my-cc .item .item-validity .item-valid span {
+    float: right;
+    font-size: 15px;
+    line-height: 28px;
+    margin-right: 10px;
+    margin-top: 4px;
+    letter-spacing: 3px;
+    font-family: 'OCRAStd';
+}
+/* Card Type */
+.my-cc .item .item-cc-type {
+    margin: 5px 0px 18px;
+}
+/* Type */
+.my-cc .item .item-cc-type h6 {
+    float: left;
+    font-size: 13px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 5px 0px;
+    letter-spacing: 2px;
+    font-family: 'OCRAStd';
+}
+/* Icon */
+.my-cc .item .item-cc-type i {
+    float: right;
+    font-size: 35px;
+}
+/* Color on Backgorund 000 */
+.my-cc .item.item-000-bg, .my-cc .item.item-000-bg h3, .my-cc .item.item-000-bg h4,
+    .my-cc .item.item-000-bg h5, .my-cc .item.item-000-bg h6, .my-cc .item.item-000-bg span
+    {
+    color: #fff !important;
+}
